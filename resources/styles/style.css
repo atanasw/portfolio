@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'pnova-regular';
+    src: url('ProximaNova-Regular.otf');
+}
+
+@font-face {
+   font-family: 'pnova-light';
+   src: url('Proxima Nova Alt Light.otf');
+}
+
+@font-face {
+   font-family: 'pnova-bold';
+   src: url('Proxima Nova Bold.otf');
+}
+
+html, body{
+   box-sizing:border-box;
+   overflow-x:hidden;
+   line-height:1.5;
+   margin:0;
+   padding:0;
+}
+
+*,*:before,*:after{
+   box-sizing:inherit;
+   -ms-text-size-adjust:100%;
+   -webkit-text-size-adjust:100%;
+}
+
+
+/* FONTS */
+html{
+   font-size:1em;
+   color: #444444;
+   font-family:  pnova-regular, pnova-light;
+}
+
+
+.button_, a{
+   letter-spacing: 2px;
+   color:black;
+   font-family: pnova-bold, pnova-light;
+   font-size: 100%;
+}
+
+a{
+   font-size: 1.3em;
+}
+
+
+.inline_links{
+
+   font-size: 1em;
+   color: #444444;
+   font-family:  pnova-regular, pnova-light;
+}
+
+.ontop-of-video-p{
+   font-size:4vw;
+   font-weight: 900;
+   text-align: center;
+   color: #444444;
+}
+
+.fade-out{
+   opacity: 1;
+}
+
+p,h3{
+   font-size:1.3em;
+}
+
+p{
+   font-family:  pnova-light;
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+.flex-contacts{
+   color: #444444;
+   font-weight: 700;
+}
+.flex-contacts:hover{
+   color:black;
+}
+
+/* ============================================================ */
+
+
+
+hr{
+   box-sizing:content-box;
+   height:0;overflow:visible;
+   border:0;
+   border-top:1px solid #cccccc;
+   margin:20px 0
+}
+
+.-video{max-width:100%;min-width:550px;height:auto;margin: auto;}
+.-center{text-align:center}
+
+
+img{
+   border-radius:10px;
+}
+
+hr{
+   margin-bottom: 50px;
+}
+
+header{
+   text-align:center;
+
+}
+
+.page-body{
+   width:80%; 
+   max-width: 1100px;
+   text-align:center;
+   margin: auto;
+}
+
+.video-div{
+   width: 100%;
+   height:auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.ontop-of-video{
+	z-index:1;
+	color: white;
+	width:100%;
+	position: absolute;
+   text-align: center;
+}
+
+ /* TRIANGLE arrow on top of video */
+ 
+.triangle-container{
+
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+   width:10%;
+   height: 10vmax;
+   cursor:pointer;
+   margin:auto;
+}
+
+ .triangle {
+   max-width:80px;
+   width:80%;
+   height: auto;
+}
+
+/* Flex Box contents */
+
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .-flex-start-align{
+   align-items: flex-start;
+ }
+
+ .flex-content  {
+   display: flex;
+   flex: 1 1 100px;
+   background-color: white;
+   margin: 10px;
+   min-width: 300px;
+ }
+
+ .flex-content p{
+   text-indent: 50px;
+ }
+
+ .flex-text{
+   flex-direction: column;
+   padding: 0px 20px ;
+   background-color: #eeeeee;
+   border-radius: 12px;
+   text-align: left;
+ }
+
+ .flex-text h3{
+   text-align: center;
+ }
+
+.flex-image{
+   width:100%;
+   height:100%;
+}
+
+/*==================  */
+.top-bar{
+   position: fixed;
+   width: 100%;
+   height: 35px;
+   margin:  auto; /* Will not center vertically and won't work in IE6/7. */
+   left: 0;
+   right: 0;
+   z-index: 10;
+   background-color: white ;
+   text-align: center;
+
+   -webkit-box-shadow: 0px 2px 8px 0px rgba(112,112,112,0.6);
+   -moz-box-shadow: 0px 2px 8px 0px rgba(112,112,112,0.6);
+   box-shadow: 0px 2px 8px 0px rgba(112,112,112,0.6);
+}
+
+.button_, .contacts-click{
+      position: relative;
+   display: inline-block;
+   border:none;
+   overflow:hidden;
+   text-decoration:none;
+   cursor:pointer;
+   white-space:nowrap;
+}
+
+.button_{
+   height:100%;
+   width: 30%;
+   max-width: 230px;
+   
+   text-align:center;
+   padding-top: 6px;
+}
+
+
+#my-projects-scroll{
+   padding-top:40px;
+}
+
+/* ABOUT ME -CONTACTS */
+#about-me{
+   
+   display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   width: 100%;
+   padding:20px;
+}
+
+.p-skills p{
+   margin-top:0;
+}
+
+.my-contact-container, .my-pic-container{
+   display:flex;
+}
+
+.my-pic-container{
+   margin-right: 5%;
+   vertical-align: top;
+}
+
+.my-contact-container{
+   flex-wrap: wrap;
+   flex-flow: column;
+   text-align: left;
+   max-width: 500px;
+   min-width: 200px;
+
+   flex: 1 1 250px;
+
+}
+
+.my-pic-img{
+   flex: 1 1 100px;
+   object-fit: contain;
+   align-self: flex-start;
+   width: 100%;
+   height: auto;
+}
+
+.contact-details{
+   line-height:1.5;
+}
+
+.flex-contacts{
+   max-width: 400px;
+   justify-content: center;
+   margin: 0 3%;
+}
+
+.flex-contacts:hover{
+color:black;
+}
+
+/* ----------------------- */
+
+
+/* Shutter In Vertical */
+.hvr-shutter-in-vertical {
+   display: inline-block;
+   vertical-align: middle;
+   -webkit-transform: perspective(1px) translateZ(0);
+   transform: perspective(1px) translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+   position: relative;
+   background: #555555;
+   -webkit-transition-property: color;
+   transition-property: color;
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+ }
+ .hvr-shutter-in-vertical:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #ffffff;
+   -webkit-transform: scaleY(1);
+   transform: scaleY(1);
+   -webkit-transform-origin: 50%;
+   transform-origin: 50%;
+   -webkit-transition-property: transform;
+   transition-property: transform;
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -webkit-transition-timing-function: ease-out;
+   transition-timing-function: ease-out;
+ }
+ .hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
+   color: white;
+ }
+ .hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
+   -webkit-transform: scaleY(0);
+   transform: scaleY(0);
+ }
+
+/* Triangle hang effect */
+.bounce {
+   animation: bounce 3s infinite;
+ }
+ 
+ @keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {
+     transform: translateY(0);
+   }
+   40% {
+     transform: translateY(-20px);
+   }
+   60% {
+     transform: translateY(-10px);
+   }
+}
